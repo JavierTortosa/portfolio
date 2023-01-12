@@ -1,0 +1,3 @@
+module pruebaModulo {
+	requires Biblioteca;
+}
