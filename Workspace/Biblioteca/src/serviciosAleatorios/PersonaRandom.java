@@ -16,7 +16,7 @@ import java.util.Random;
  * 	Metodo generaAltura:	Genera un numero aleatorio de altura en cm
  */
 
-public class PersonaRandom implements VariablesDeEntorno{
+public class PersonaRandom implements Entorno{
 	
 	private static final String[] nomHombre = {
 		"Aarón", 		"Abdón", 		"Abel", 		"Abilio", 		"Abundio", 		"Acacio", 		"Adalberto", 	
@@ -111,16 +111,14 @@ public class PersonaRandom implements VariablesDeEntorno{
 		"Zoe",			"Zoraida"
 	};
 
-	
 	Random rnd = new Random();
 	
 	private String 	nombre = "";
 	private int 	edad=0;
-	private int 	altura = 0;
+	private float 	altura = 0;
 	private static int numeroNombre;
 	
 	public PersonaRandom() {
-		
 	}
 	
 	public PersonaRandom(int hombreOMujer, boolean genEdad, boolean genAltura) {
@@ -219,14 +217,12 @@ public class PersonaRandom implements VariablesDeEntorno{
 	 * @return int valor de la edad
 	 */
 	public int generaEdad (int desde, int hasta) {
-		/*
-		if (desde>hasta) {
-			int tmp = desde;
-			desde = hasta;
-			hasta = tmp;
-		}
-		*/
-	Random rnd = new Random();
+		int edad = generaNum(desde, hasta);
+		return edad;
+	}
+
+	private int generaNum(int desde, int hasta) {
+		Random rnd = new Random();
 		int edad = rnd.nextInt(desde, hasta+1);
 		return edad;
 	}
@@ -237,9 +233,8 @@ public class PersonaRandom implements VariablesDeEntorno{
 	 * @return int altura en cm
 	 */
 	public int generaAltura (int desde, int hasta) {
-		Random rnd = new Random();
-		int altura = rnd.nextInt(desde, hasta+1);
-		return altura;
+		int altura =generaNum(desde, hasta);
+			return altura;
 	}
 	
 	@Override
@@ -263,7 +258,7 @@ public class PersonaRandom implements VariablesDeEntorno{
 		this.edad = edad;
 	}
 
-	public int getAltura() {
+	public float getAltura() {
 		return altura;
 	}
 

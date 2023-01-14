@@ -2,7 +2,7 @@ package serviciosAleatorios;
 
 import java.util.Random;
 
-public class NumerosRandom implements VariablesDeEntorno{
+public class NumerosRandom implements Entorno{
 	
 	String numeroString="";
 	int numeroInt = 0;

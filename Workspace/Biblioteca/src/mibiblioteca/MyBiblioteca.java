@@ -1,14 +1,13 @@
 package mibiblioteca;
 
 import serviciosAleatorios.Algoritmos;
-import serviciosAleatorios.Evaluacion;
 import serviciosAleatorios.NumerosRandom;
 import serviciosAleatorios.Passwords;
 import serviciosAleatorios.PersonaRandom;
-import serviciosAleatorios.VariablesDeEntorno;
+import serviciosAleatorios.Entorno;
 
 /**
- * @author Parabellum
+ * @author F. Javier Tortosa
  * 
  * Biblioteca de metodos para generar actividades recursivas
  * @implSpec 
@@ -27,14 +26,13 @@ import serviciosAleatorios.VariablesDeEntorno;
  * getEvaluaPassword(String password): comprueba si el password tiene mas de 5 numeros, mas de  
  * 
  */
-public class MyBiblioteca implements VariablesDeEntorno{
+public class MyBiblioteca implements Entorno{
 
-	//public MyBiblioteca() {
-		Algoritmos algoritmos = new Algoritmos();
-		//Evaluacion evaluacion = new Evaluacion();
-		NumerosRandom numerosRandom = new NumerosRandom();
-		Passwords passwords = new Passwords();
-		PersonaRandom personaRandom = new PersonaRandom();
+	Algoritmos algoritmos 			= new Algoritmos();
+	//Evaluacion evaluacion 		= new Evaluacion();
+	NumerosRandom numerosRandom 	= new NumerosRandom();
+	Passwords passwords 			= new Passwords();
+	PersonaRandom personaRandom 	= new PersonaRandom();
 		
 	public MyBiblioteca() {
 	}

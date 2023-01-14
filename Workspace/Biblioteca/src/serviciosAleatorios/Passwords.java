@@ -2,7 +2,7 @@ package serviciosAleatorios;
 
 import java.util.Random;
 
-public class Passwords implements VariablesDeEntorno{
+public class Passwords implements Entorno{
 
 	private String passGenerado;
 	private int longitudPass;

@@ -33,7 +33,7 @@ public class Inicio {
 		int edad = mb.getRandomEdad(15, 20);
 		System.out.print(", tiene " + edad +" años");
 		
-		int altura = mb.getRandomAltura(100, 170);
+		int altura = mb.getRandomAltura(150, 190);
 		System.out.println(" y mide "+ altura + "cm");
 	}
 }
