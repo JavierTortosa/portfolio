@@ -4,10 +4,27 @@ public class Algoritmos {
 	
 	public char letraDNI (int numero) {
 
-		char letraDNI = ' ';
-		DNI dni = new DNI(numero);
-		letraDNI = dni.obtenerLetra();
-		return letraDNI;
+		int dni1=0;
+		
+		try	{
+			dni1=Integer.valueOf(numero);
+		} catch (Exception e) {
+			System.out.println("El numero de dni debe ser solo el numero, sin letras ni puntos");
+			dni1=0;
+		}
+		
+		if (dni1!=0) {
+//			return getLetraDNI(dni);
+			char letraDNI = ' ';
+			DNI dni = new DNI(numero);
+			letraDNI = dni.obtenerLetra();
+			return letraDNI;
+		} else {
+			return '-';
+		}
+		
+		
+		
 	}
 }
 

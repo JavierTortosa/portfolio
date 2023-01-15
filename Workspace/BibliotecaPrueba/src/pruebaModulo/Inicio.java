@@ -8,9 +8,10 @@ public class Inicio {
 
 		MyBiblioteca mb = new MyBiblioteca();
 		
-		String rndDNI = mb.getRandomString("99999999");
+		String rndDNI = mb.getRandomString("999p9999");
 		char rndchar = mb.getLetraDNI(rndDNI);
 		System.out.println("la letra del dni " + rndDNI + " es " + rndchar);
+		
 		
 		String rndStr = mb.getRandomString("(999)-999.999.999"); 
 		System.out.println("el telefono es " + rndStr);
@@ -20,6 +21,9 @@ public class Inicio {
 		
 		boolean evaluapass = mb.getEvaluaPassword(rndPass, 6, 3, 2, false);
 		System.out.println("el password es seguro? " + evaluapass);
+		
+		boolean evaluapass1 = mb.getEvaluaPassword(rndPass, 6, 3, 2, true);
+		System.out.println("el password es seguro? " + evaluapass1);
 		
 		String nomH = mb.getRandomNombre(mb.HOMBRE);
 		System.out.println("el niño se llama " + nomH);

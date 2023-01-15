@@ -38,7 +38,20 @@ public class MyBiblioteca implements Entorno{
 	}
 	
 	public char getLetraDNI(String numeroDNI) {
-		return getLetraDNI(Integer.valueOf(numeroDNI));
+		int dni =0;
+		
+		try {
+			dni=Integer.valueOf(numeroDNI);
+		} catch (Exception e) {
+			System.out.println("Solo el numero, sin letras ni puntos");
+			dni=0;
+		}
+		
+		if (dni != 0) {
+			return getLetraDNI(dni);
+		} else {
+			return '-';
+		}
 	}
 	
 	public char getLetraDNI(int numeroDNI) {
