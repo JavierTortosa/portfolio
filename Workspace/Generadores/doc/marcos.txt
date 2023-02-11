@@ -1,0 +1,47 @@
+		//marco 1
+		 
+		marcoArriba	=	"┌───────┬───────┬───────┐";
+		marcoCentro	=	"├───────┼───────┼───────┤";
+		marcoAbajo	= 	"└───────┴───────┴───────┘";
+		marcoLado	= 	"│";
+		
+		// marco 2
+		
+		marcoArriba	=	"╔═══════╦═══════╦═══════╗";
+		marcoCentro	=	"╠═══════╬═══════╬═══════╣";
+		marcoAbajo	= 	"╚═══════╩═══════╩═══════╝";
+		marcoLado	= 	"║";
+		
+		
+/*
+
+	// convierte cadenas string a codigo unicode
+	public static void caracteres() {
+		
+		String marcoArriba1	=	"╔═══════╦═══════╦═══════╗";
+		String marcoCentro1	=	"╠═══════╬═══════╬═══════╣";
+		String marcoAbajo1	= 	"╚═══════╩═══════╩═══════╝";
+		String marcoLado1	= 	"║";
+		
+		String marcoArriba	=	"┌───────┬───────┬───────┐";
+		String marcoCentro	=	"├───────┼───────┼───────┤";
+		String marcoAbajo	= 	"└───────┴───────┴───────┘";
+		String marcoLado	= 	"│";
+		
+		String m = marcoLado;
+		for (int i = 0; i<m.length(); i++) {
+			char t = m.charAt(i);
+			
+			int codigo = (int) t;
+			
+			//System.out.print(t + " ");
+			System.out.print(codigo+", ");
+			//System.out.println();
+			//String miCaracter = Character.toString(m1[i]);
+			//temp = temp + miCaracter;
+			//miMarco[] = miMarco + micaracter;
+			
+		}
+	}
+*/
+

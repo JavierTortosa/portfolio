@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"sp.fjto.generadores","l":"Generator"},{"p":"sp.fjto.implementacion","l":"PruebaGenerators"},{"p":"sp.fjto.generadores","l":"SudokuGenerator"}];updateSearchResults();
